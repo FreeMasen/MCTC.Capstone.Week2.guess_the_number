@@ -3,7 +3,7 @@ import random
 correct = 'you guessed correctly!'
 too_low = 'too low'
 too_high = 'too high'
-
+error_text = 'Error, please enter in a whole number!'
 
 def configure_range():
     '''Set the high and low values for the random number'''
