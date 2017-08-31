@@ -34,7 +34,8 @@ def main():
 
     (low, high) = configure_range()
     secret = generate_secret(low, high)
-
+    print('I am going to pick a random number and then you need to guess it')
+    print('I will let you know if your guess is too high or too low')
     while True:
         guess = get_guess()
         result = check_guess(guess, secret)
