@@ -36,10 +36,12 @@ def main():
     secret = generate_secret(low, high)
     print('I am going to pick a random number and then you need to guess it')
     print('I will let you know if your guess is too high or too low')
+    guess_counter = 0
     while True:
+        guess_counter += 1
         guess = get_guess()
         result = check_guess(guess, secret)
-        print(result)
+        print(result + 'it took %s guesses' % guess_counter)
 
         if result == correct:
             break
