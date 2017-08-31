@@ -44,9 +44,9 @@ def main():
         guess_counter += 1
         guess = get_guess()
         result = check_guess(guess, secret)
-        print(result + 'it took %s guesses' % guess_counter)
 
         if result == correct:
+            print(result + 'it took %s guesses' % guess_counter)
             break
 
 
